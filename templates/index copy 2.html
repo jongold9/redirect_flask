@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Ссылка на CSS файл -->
+</head>
+<body>
+    <form action="/" method="post">
+        <div class="controls">
+            <select name="redirect_type">
+                <option value="Redirect 301">Redirect 301</option>
+                <option value="RewriteRule">RewriteRule</option>
+                <option value="RewriteRule with subpaths">RewriteRule with subpaths</option>
+                <option value="Directory redirect with subpaths">Directory redirect with subpaths</option>
+            </select>
+            <input type="submit" value="Generate Redirects">
+        </div>
+        <div class="container">
+            <div class="column from">
+                <label for="from_urls">From URLs:</label>
+                <textarea id="from_urls" name="from_urls" required></textarea>
+            </div>
+            <div class="column to">
+                <label for="to_urls">To URLs:</label>
+                <textarea id="to_urls" name="to_urls" required></textarea>
+            </div>
+            <div class="column generated">
+                <label for="generated_redirects">Generated Redirects:</label>
+                <textarea id="generated_redirects" name="generated_redirects" readonly></textarea>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

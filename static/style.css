@@ -1,0 +1,51 @@
+/* Общие стили для всего тела документа */
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+/* Стили для основного контейнера, содержащего три колонки */
+.container {
+    display: flex;
+    width: 100%; /* Ширина на 100% от ширины экрана */
+    justify-content: space-between; /* Равномерное распределение между дочерними элементами */
+}
+
+/* Стили для каждого столбца с текстовыми полями */
+.column {
+    width: calc(33% - 5px); /* Вычитаем горизонтальные отступы */
+    padding: 5px; /* Внутренний отступ */
+    box-sizing: border-box; /* Включаем padding в общую ширину */
+    background-color: hsl(0, 37%, 72%); /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Стили для текстовых полей */
+textarea {
+    width: 100%; /* Ширина поля на 100% ширины столбца */
+    height: 600px; /* Высота поля */
+    resize: none; /* Отключаем возможность изменения размера */
+    overflow-x: scroll; /* Всегда показывать горизонтальную прокрутку */
+    overflow-y: auto; /* Вертикальная прокрутка по мере необходимости */
+    white-space: nowrap; /* Предотвращаем перенос текста на новую строку */
+    box-sizing: border-box; /* Включаем padding и border в ширину элемента */
+}
+
+/* Стили для выпадающего списка и кнопки отправки формы */
+.controls {
+    width: 100%; /* Ширина контейнера на 100% от ширины экрана */
+    margin-top: 20px; /* Отступ сверху */
+    padding: 20px; /* Внутренний отступ */
+    box-sizing: border-box; /* Включаем padding в общую ширину */
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение пространства */
+}
+
+select, input[type="submit"] {
+    padding: 10px 20px; /* Внутренний отступ */
+    cursor: pointer; /* Курсор в виде указателя */
+}

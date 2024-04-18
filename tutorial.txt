@@ -1,0 +1,14 @@
+docker images
+docker ps
+docker stop redirect2
+docker rm redirect2
+docker build -t redirect2 .
+docker run -p 5001:5000 redirect2
+docker rm 1cdb1ca7f7f3
+
+docker stop $(docker ps -q) && docker rm $(docker ps -aq) && docker build -t redirect2 . && docker run -p 5001:5000 redirect2
+docker build -t redirect2 . && docker run -p 5001:5000 redirect2
+
+
+
+
