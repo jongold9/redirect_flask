@@ -20,7 +20,7 @@ body {
     width: calc(33% - 5px); /* Вычитаем горизонтальные отступы */
     padding: 5px; /* Внутренний отступ */
     box-sizing: border-box; /* Включаем padding в общую ширину */
-    background-color: hsl(0, 37%, 72%); /* Цвет фона */
+    background-color: hsl(0, 0%, 53%); /* Цвет фона */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
@@ -42,7 +42,7 @@ textarea {
     padding: 20px; /* Внутренний отступ */
     box-sizing: border-box; /* Включаем padding в общую ширину */
     display: flex;
-    justify-content: space-between; /* Равномерное распределение пространства */
+    justify-content: center; /* Равномерное распределение пространства */
 }
 
 select, input[type="submit"] {
